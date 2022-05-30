@@ -1,0 +1,145 @@
+:root{
+    font-size: 14px;
+    text-align: center;
+}
+.wrap{
+    width: 100%;
+    overflow: hidden;
+}
+
+.header{
+    position: relative;
+}
+.header .container .img-box{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/main.jpg);
+    text-indent: -99999px;
+}
+.nav{
+    padding: 35px 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.nav ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec .container{
+    height: 100vh;
+    /* background-color: rgb(255, 255, 255); */
+    position: relative;
+    z-index: -1000;
+
+}
+.sec .container h2{
+    display: flex;
+    position: absolute;
+    right: 28%;
+    top: 28%;
+    font-size: 60px;
+
+}
+.block01{
+    width: 100%;
+    max-width: 30%;
+    height: 700px;
+    background-color: rgb(232, 218, 235);
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    text-indent:-99999;
+}
+.block01 p{
+    text-indent: -999999px;
+}
+.aboutme .container img{
+    width: 100%;
+    max-width: 22%;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}
+.block-txt{
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    background-color: #f8dede;
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    z-index: -10;
+}
+.block-txt h3{
+    width: 100%;
+    margin: 20px 100px;
+    text-align: left;
+    font-size: 26px;
+}
+.block-txt span{
+    text-align: left;
+    font-weight: 600;
+}
+.block-txt p{
+    margin: 20px 100px;
+    text-align: left;
+    line-height: 30px;
+}
+
+.block-txt p>i{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+/* 스킬 */
+.skills{
+    position: relative;
+    width: 100%;
+    
+}
+.skills .container{
+    position: absolute;
+    left: 15%;
+    
+}
+.skills .container h2{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+}
+.skill{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: 10px;
+    height: 300px;
+    background-color: #f8dede;
+    font-size: 30px;
+}
+/* project */
+.project{
+    width: 100%;
+    height: 1000px;
+}
+.inner{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.project img{
+    width: 400px;
+    height: 200px;
+    margin: 40px;
+    /* border: 2px solid #f8dede; */
+}
+.project .container{
+    z-index:0;
+}
