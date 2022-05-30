@@ -203,110 +203,86 @@ html, body {
     font-size: 20px;
 }
 
-/* 스킬 스타일 */
-.skills h2{
+/* 리스트 스타일 */
+.list h2{
     font-weight: 600;
     font-size: 64px;
-    color:#f8bcc2;
+    color:#065F8F;
     text-align: center;
     padding: 150px 0;
 }
-
-.skills .row{
+.list .row{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     margin: 0 auto;
     height: 100vh;
 }
-.skill{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-    height: 35%;
-    margin-right: 5px;
+.tourlist{
+    height: 70%;
+    margin-right: 20px;
     padding: 10px;
-    background-color: #f8dede;
+    background-color: #EAF7FE;
     font-size: 30px;
+}
+.tourlist img{
+    width: 400px;
+    height: 350px;
     border-radius: 50%;
 }
-.skills .html{
+.list .list01{
     margin-left: 100px;
 }
-.skills .github{
+.list .list04{
     margin-right: 95px;
 }
-.skill .fas,.skill .fab{
-    font-size: 64px;
-    text-shadow: #de6969 1px 0 10px;
+.tourlist h3{
+    text-align: center;
     color: #fff;
-    margin-bottom: 50px;
+    text-shadow: #5AC1F8 3px 0 10px;
 }
-.skill p{
-    color: #de6969;
-    text-shadow: #fff 3px 0 10px;
+.tourlist p{
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.7em;
+    color: #222;
 }
 
-/* 프로젝트 스타일 */
-.project .row{
+/* gallery 스타일 */
+.gallery .row{
     position: relative;
     display: flex;
     flex-flow: column nowrap;
-    margin: 0 auto;
 }
-.project h2{
+.gallery h2{
     font-weight: 600;
     font-size: 64px;
-    color:#f8bcc2;
+    color: #065F8F;
     text-align: center;
     padding: 150px 0;
 }
-.prj{
-    margin: 100px 100px;
-}
 
-.project .project01{
-    margin-top: 0;
+.img-box{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 130px;
 }
-.prj-img{
-    width: 50%;
-    height: auto;
-    cursor: pointer;
-    float: left;
+.gallery img{
+    display: flex;
+    flex-flow: row wrap;
+    width: 500px;
+    height: 300px;
+    margin: 0 70px 100px 0;
 }
-.prj-txt{
-    width: 50%;
-    float: right;
-    padding-top:200px;
+.gallery img:hover{
+    transform: scale(1.5);
+    transition: all 0.5s;
+    border: 6px solid #98D8FB;
 }
-.prj p{
-    font-size: 24px;
-    font-weight: 600;
-    text-align: right;
-    color: #de6969
-}
-.prj-txt p> span{
-    color: #f8bcc2;
-    font-size: 16px;
-}
-.prj h4{
-    font-size: 64px;
-    font-weight: 600;
-    text-align: right;
-    color: #fff;
-    text-shadow: #de6969 1px 0 10px;
-}
-.prj hr{
-    border: 1px solid #f8bcc2;
-    margin: 10px 0;
-}
-
 /* 데스크탑 */
 @media (max-width:1200px){
     .header .row{
-        height: 85vh;
+        height: 100vh;
     }
     .header h1{
         font-size: 100px;
@@ -324,21 +300,50 @@ html, body {
         width: 30%;
         left:32%;
     }
-    .skills .row{
-        display: flex;
+    .list .row{
         flex-flow: row wrap;
-        justify-content: space-around;
-        margin: 0;
+        justify-content: space-between;
+        margin: 0 auto;
+        height: 100vh;
     }
-    .skill {
+
+    .tourlist{
+        width: 45%;
+        height: auto;
+        margin: 20px 20px;
+    }
+    .tourlist img{
+        width: 100%;
+        border-radius: 0%;
+    }
+    .list .list01{
+        margin-left: 20px;
+    }
+    .list .list04{
         margin-right: 20px;
     }
-    .skills .html{
-        margin-left: 0px;
+    .gallery{
+        width: 100%;
+        margin: 700px 0 0 0;
     }
-    .skills .github{
-        margin-right: 0px;
+    .gallery h2{
+        font-size: 52px;
+        padding: 150px 0 100px 0;
     }
+    .gallery .img-box{
+        width: 100%;
+        justify-content: center;
+        margin-left: 30px;
+    }
+    .gallery .img-box li{
+        width: 50%;
+
+    }
+    .gallery img:hover{
+        transform: scale(1.2);
+        border: none;
+    }
+
 }
 
 @media(max-width:920px){
@@ -365,11 +370,50 @@ html, body {
         height: auto;
         padding: 30px;
         border-radius: 20px;
-        background-color: #f8bcc2;
+        background-color: #5AC1F8;
         position: absolute;
         top:60%;
         left:70%;
         transform:translate(-50%,-50%);
+    }
+    .list .row{
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        height: 100vh;
+    }
+
+    .tourlist{
+        width: 45%;
+        height: auto;
+        margin: 20px 20px;
+    }
+    .tourlist img{
+        width: 100%;
+        border-radius: 0%;
+    }
+    .list .list01{
+        margin-left: 20px;
+    }
+    .list .list04{
+        margin-right: 20px;
+    }
+    .gallery{
+        width: 100%;
+        margin: 700px 0 0 0;
+    }
+    .gallery h2{
+        font-size: 52px;
+        padding: 150px 0 100px 0;
+    }
+    .gallery .img-box{
+        width: 100%;
+        justify-content: center;
+        margin-left: 30px;
+    }
+    .gallery img:hover{
+        transform: scale(1.2);
+        border: none;
     }
 }
 
@@ -377,7 +421,7 @@ html, body {
 /* 테블릿 */
 @media (max-width:767px){
     .header .row{
-        height: 85vh;
+        height: 100vh;
     }
     .header h1{
         font-size: 54px;
@@ -412,60 +456,51 @@ html, body {
         left:50%;
         z-index: 998;
     }
-    .skills .row{
-        flex-flow: row wrap;
-        justify-content:center;
-        align-items: center;
-        height: 100vh;
-    }
-    .skill{
+    .tourlist{
         width: 100%;
-        height: auto;
-        min-height: 10%;
-        font-size: 24px;
+        margin: 20px 20px;
+    }
+    .tourlist img{
+        width: 100%;
         border-radius: 0%;
-        margin: 10px;
     }
-    .skills .html{
-        margin-left: 10px;
+    .list .list01{
+        margin-left: 20px;
     }
-    .skills .github{
-        margin-right: 10px;
+    .list .list04{
+        margin-right: 20px;
     }
-    .skill .fas,.skill .fab{
+    .gallery{
+        width: 100%;
+        margin: 1700px 0 0 0;
+    }
+    .gallery h2{
         font-size: 52px;
-        margin-bottom: 0px;
+        padding: 150px 0 40px 0;
     }
-    .project .row{
-        flex-flow: column nowrap;
-    }
-    .prj-img{
+    .gallery .img-box{
         width: 100%;
-        cursor: pointer;
+        justify-content: center;
+        margin-left: 30px;
     }
-    .prj-txt{
-        width: 100%;
-        padding-top:10px;
-    }
-    .prj h4{
-        font-size: 32px;
-        font-weight: 600;
-    }
-    .prj hr{
-        border: 1px solid #f8bcc2;
-        margin: 10px 0;
-        width: 100%;
+    .gallery img:hover{
+        transform: scale(1.2);
+        border: none;
     }
 }
 
 /* 모바일 */
-@media (max-width:424px){
+@media (max-width:460px){
     .container{
         margin: 0;
     }
+    .header .row{
+        width: 100%;
+        height: 100vh;
+    }
     .header h1{
         font-size: 64px;
-        padding-top: 300px;
+        padding-top: 190px;
         padding-left: 0px;
         text-align: center;
     }
@@ -477,7 +512,7 @@ html, body {
         font-size: 14px;
     }
     .nav ul{
-        margin: 20px 20px;
+        margin: 20px 10px;
     }
     .best .row{
         margin: 50px;
@@ -496,79 +531,46 @@ html, body {
         top:80%;
 
     }
-    .best .best-txt h3,
-    .best .best-education h4{
-        font-size: 16px;
+    .list h2{
+        font-size: 52px;
+        padding: 150px 0 40px 0;
+        text-align: center;
     }
-    .best .best-txt p,
-    .best .best-education p{
-        font: 12px;
+    .list .container{
+        display: block;
     }
-    .best .best-txt i,
-    .best .best-education span{
-        margin-right: 10px;
-        margin-top: 8px;
-    }
-    .far{
+    .tourlist{
+        margin-right: 0px;
         font-size: 20px;
+        padding: 20px;
     }
-    .fab{
-        font-size: 22px;
+    .tourlist img{
+        width: 100%;
+        height: auto;
+        border-radius: 0%;
+        margin-bottom: 10px;
     }
-    .fas{
-        font-size: 18px;
+    .list .list01{
+        margin-left: 0px;
     }
-    .skills h2{
+    .list .list04{
+        margin-right: 0px;
+    }
+
+    .gallery{
+        margin: 1500px 0 0 0;
+    }
+    .gallery h2{
         font-size: 52px;
         padding: 150px 0 40px 0;
     }
-    .skills .row{
-        flex-flow: row wrap;
-        justify-content:center;
-        align-items: center;
-        height: 100vh;
-    }
-    .skill{
+    .gallery .img-box{
         width: 100%;
-        height: 10%;
-        font-size: 24px;
-        border-radius: 0%;
-        margin: 10px;
+        display: block;
+        margin-left: 0px;
     }
-    .skills .html{
-        margin-left: 10px;
-    }
-    .skills .github{
-        margin-right: 10px;
-    }
-    .skill .fas,.skill .fab{
-        font-size: 52px;
-        margin-bottom: 0px;
-    }
-    .project .row{
-        flex-flow: column nowrap;
-        margin: 0 auto;
-    }
-    .project h2{
-        font-size: 54px;
-        padding: 150px 0 100px 0;
-    }
-    .prj{
-        width: 100%;
-        margin: 0 auto;
-        margin-bottom: 100px;
-    }
-    .prj-txt{
-        width: 100%;
-
-    }
-    .prj h4{
-        text-align: center;
-        margin: 10px;
-        font-size: 32px;
-    }
-    .prj p{
-        font-size: 14px;
-        text-align: center;
+    .gallery img:hover{
+        transform: scale(1.2);
+        border: none;
     }
 }
