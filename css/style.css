@@ -11,6 +11,7 @@
 /* 공통 스타일 */
 .sec .container{
     width: 100%;
+    height: 100vh;
 }
 .sec h2::after{
     display: block;
@@ -130,7 +131,7 @@ html, body {
     opacity: 2;
 }
 
-/* 어바웃미 스타일 */
+/* best 스타일 */
 .best{
     position: relative;
 }
@@ -247,35 +248,48 @@ html, body {
     line-height: 1.7em;
     color: #222;
 }
-
-/* gallery 스타일 */
-.gallery{
-    margin-top: 200px;
-}
-.gallery .row{
-    width: 2000px;
-    margin: 0 auto;
-}
-.gallery h2{
-    font-weight: 600;
-    font-size: 64px;
-    color: #065F8F;
-    text-align: center;
-    padding: 150px 0;
-}
-.gallery .img-box{
+.footer .container{
     width: 100%;
+    height: 200px;
+    background-color: #98D8FB;
+    text-align: center;
+    margin-top: 400px;
+}
+.footer .container h4{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+    padding-top: 20px;
+}
+.footer .container p{
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 30px 30px 30px;
+}
+.sns-box{
+    margin-right: 35px;
+}
+.sns{
     display: flex;
-    flex-flow: row wrap;
+    justify-content: center;
 }
-.gallery .img-box li>img{
-    width: 500px;
-    height: 270px;
+.sns li{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 30px;
 }
-.gallery img:hover{
-    transform: scale(1.2);
-    transition: all 0.5s;
-    border: 6px solid #98D8FB;
+.fa-brands{
+    font-size: 30px;
+    color: #fff;
+}
+.footer li:hover .fa-facebook{
+    color: #3b5998;
+}
+.footer li:hover .fa-youtube{
+    color: #c4302b;
+}
+.footer li:hover .fa-instagram{
+    color: rgb(236, 93, 236);
 }
 /* 데스크탑 */
 @media (max-width:1200px){
@@ -319,7 +333,9 @@ html, body {
     .list .list04{
         margin-right: 20px;
     }
-
+    .footer .container{
+        margin-top: 900px;
+    }
 }
 
 @media(max-width:920px){
@@ -332,7 +348,7 @@ html, body {
         margin-top: 150px;
     }
     .best h2{
-        padding: 105px 0px 200px 0px;
+        font-size: 58px;
     }
     .best .block01{
         width: 50%;
@@ -346,7 +362,7 @@ html, body {
         height: auto;
         padding: 30px;
         border-radius: 20px;
-        background-color: #5AC1F8;
+        background-color: #98D8FB;
         position: absolute;
         top:60%;
         left:70%;
@@ -374,6 +390,9 @@ html, body {
     .list .list04{
         margin-right: 20px;
     }
+    .footer .container{
+        margin-top: 1000px;
+    }
 }
 
 
@@ -391,8 +410,11 @@ html, body {
     .sec-conts{
         margin-top: 200px;
     }
+    .best .container{
+        margin: 200px 0 0 0;
+    }
     .best h2{
-        padding: 105px 0px 200px 0px;
+        padding: 0px 0px 200px 0px;
     }
     .best .row{
         height: 100vh;
@@ -429,8 +451,15 @@ html, body {
     .list .list04{
         margin-right: 20px;
     }
+    .footer .container{
+        margin-top: 2000px;
+    }
 }
-
+@media (max-width:620px){
+    .footer .container{
+        margin-top: 2300px;
+    }
+}
 /* 모바일 */
 @media (max-width:460px){
     .container{
@@ -460,7 +489,6 @@ html, body {
         margin: 50px;
     }
     .best h2{
-        padding: 110px 0px 40px 0px;
         font-size: 52px;
     }
     .best .best-img{
@@ -470,7 +498,7 @@ html, body {
     }
     .best .best-box{
         width: 80%;
-        top:80%;
+        top:75%;
 
     }
     .list h2{
@@ -482,7 +510,7 @@ html, body {
         display: block;
     }
     .tourlist{
-        margin-right: 0px;
+        margin: 0px 0px 50px 0px;
         font-size: 20px;
         padding: 20px;
     }
@@ -498,5 +526,7 @@ html, body {
     .list .list04{
         margin-right: 0px;
     }
-
+    .footer .container{
+        margin-top: 1900px;
+    }
 }
